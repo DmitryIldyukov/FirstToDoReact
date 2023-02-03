@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import logo from './assets/rocket.svg';
+import styles from './App.module.css';
+import Header from "./components/header/Header";
+import TodoList from "./components/todoList/TodoList";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className={styles.app}>
+            <div className={styles.container}>
+                <Header />
+                <TodoList />
+            </div>
+        </div>
+    );
 }
 
 export default App;

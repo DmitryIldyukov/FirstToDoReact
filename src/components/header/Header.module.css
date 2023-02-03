@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+}
+
+.logo {
+    padding-left: 12px;
+}
+
+.leftPart {
+    color: #4EA8DE;
+}
+
+.rightPart {
+    color: #5E60CE;
+}
