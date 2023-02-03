@@ -27,6 +27,12 @@
     }
 }
 
+@media (max-height: 770px) {
+    .tasksList {
+        height: 30vh;
+    }
+}
+
 .numberOfTasks {
     color: #4EA8DE;
 }
@@ -40,6 +46,6 @@
     flex-direction: column;
     margin-top: 20px;
     row-gap: 12px;
-    max-height: 52vh;
+    height: 52vh;
     overflow: auto;
 }

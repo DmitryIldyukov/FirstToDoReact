@@ -6,6 +6,12 @@
     width: 100%;
 }
 
+@media (max-height: 770px) {
+    .header {
+        min-height: 100px;
+    }
+}
+
 .title {
     display: flex;
     align-items: center;

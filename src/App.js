@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import logo from './assets/rocket.svg';
 import styles from './App.module.css';
 import Header from "./components/header/Header";
 import TodoList from "./components/todoList/TodoList";

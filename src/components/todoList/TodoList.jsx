@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import plus from '../../assets/plus.svg';
 import styles from './TodoList.module.css';
 import TaskItem from "./TaskItem";
 import MyButton from "../../UI/MyButton";
@@ -10,7 +9,11 @@ const TodoList = () => {
         {id: 1, title: 'Один', body: 'description'},
         {id: 2, title: 'Два', body: 'description'},
         {id: 3, title: 'Три', body: 'description'},
-        {id: 4, title: 'Четыре', body: 'description'}
+        {id: 4, title: 'Четыре', body: 'description'},
+        {id: 5, title: 'Один', body: 'description'},
+        {id: 6, title: 'Два', body: 'description'},
+        {id: 7, title: 'Три', body: 'description'},
+        {id: 8, title: 'Четыре', body: 'description'}
     ])
 
     return (

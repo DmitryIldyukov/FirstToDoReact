@@ -1,6 +1,4 @@
 import React from 'react';
-import styles from "../todoList/TodoList.module.css";
-import plus from "../../assets/plus.svg";
 import MyButton from "../../UI/MyButton";
 
 const FormComponent = () => {
