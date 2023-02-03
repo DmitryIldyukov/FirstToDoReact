@@ -7,6 +7,7 @@ const TaskItem = (props) => {
         <div className={styles.itemContainer}>
             <div className={styles.leftPart}>
                 <input className={styles.checkTask} type="checkbox" id={props.task.id}/>
+                <label className={styles.forCheck} htmlFor={props.task.id}></label>
                 <label className={styles.taskContent} htmlFor={props.task.id}>
                     {props.task.title}
                 </label>

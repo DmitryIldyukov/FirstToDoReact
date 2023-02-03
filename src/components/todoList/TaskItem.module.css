@@ -1,6 +1,5 @@
 .itemContainer {
     display: flex;
-    min-height: 66px;
     width: 100%;
     background-color: #262626;
     border: 1px solid #333333;
@@ -18,14 +17,17 @@
 }
 
 .taskContent {
+    display: flex;
     padding: 0 4px;
-    font-family: 'Inter';
+    text-align: left;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 140%;
     color: #F2F2F2;
-    align-items: flex-end;
+    cursor: pointer;
+    margin-top: 2px;
 }
 
 .deleteTask {
@@ -40,14 +42,14 @@
     z-index: -1;
 }
 
-.checkTask+label {
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-    cursor: pointer;
+.checkTask+.forCheck {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
 }
 
-.checkTask+label::before {
+.checkTask+.forCheck::before {
     content: '';
     display: inline-block;
     width: 16px;
@@ -58,16 +60,16 @@
     margin-right: 12px;
 }
 
-.checkTask+label:hover::before {
+.checkTask+.forCheck:hover::before {
     border-color: #1E6F9F;
 }
 
-.checkTask:checked+label {
+.checkTask:checked+.forCheck {
     text-decoration: line-through;
     text-decoration-thickness: 2px;
 }
 
-.checkTask:checked+label::before {
+.checkTask:checked+.forCheck::before {
     border-color: #5E60CE;
     background-color: #5E60CE;
     background-image: url("../../assets/Vector.svg");
@@ -75,11 +77,11 @@
     background-size: 16px 16px;
 }
 
-.checkTask:checked:hover+label::before {
+.checkTask:checked:hover+.forCheck::before {
     background-color: #8284FA;
     border-color: #8284FA;
 }
 
-.checkTask:checked+label {
+.checkTask:checked+.forCheck {
     color: #808080;
 }
