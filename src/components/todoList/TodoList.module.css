@@ -43,21 +43,3 @@
     max-height: 52vh;
     overflow: auto;
 }
-
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 5px 0 auto;
-    height: 44px;
-    width: 180px;
-    border-radius: 6px;
-    border: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-    background-color: #1E6F9F;
-    color: #F2F2F2;
-    cursor: pointer;
-}

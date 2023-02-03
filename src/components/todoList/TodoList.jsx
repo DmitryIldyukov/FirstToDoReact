@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import plus from '../../assets/plus.svg';
 import styles from './TodoList.module.css';
 import TaskItem from "./TaskItem";
+import MyButton from "../../UI/MyButton";
 
 const TodoList = () => {
 
@@ -27,7 +28,7 @@ const TodoList = () => {
                     <TaskItem task={task} key={task.id}/>
                 )}
             </div>
-            <button className={styles.btn}>Добавить задачу <img src={plus} style={{marginLeft: 8}}/></button>
+            <MyButton>Добавить задачу</MyButton>
         </div>
     );
 };
